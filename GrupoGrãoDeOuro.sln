@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GRUPO.WebApp.MVC", "src\web
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{8A8EFD1F-6C37-4589-8F24-3BA5FF0D6680}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRUPO.Core", "src\building blocks\GRUPO.Core\GRUPO.Core.csproj", "{65F97FE4-DE12-4123-920E-AE255DE993A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GRUPO.Core", "src\building blocks\GRUPO.Core\GRUPO.Core.csproj", "{65F97FE4-DE12-4123-920E-AE255DE993A1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Carrinho", "Carrinho", "{D4415E4D-6085-4645-9557-AC80C4ACB6B6}"
 EndProject
@@ -35,15 +35,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pagamento", "Pagamento", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pedido", "Pedido", "{F86610A6-3C32-4E4F-863C-C93F91B97593}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRUPO.Carrinho.API", "src\services\GRUPO.Carrinho.API\GRUPO.Carrinho.API.csproj", "{D1EC0CF8-55AB-4463-8054-156ECC176449}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GRUPO.Carrinho.API", "src\services\GRUPO.Carrinho.API\GRUPO.Carrinho.API.csproj", "{D1EC0CF8-55AB-4463-8054-156ECC176449}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRUPO.Catalogo.API", "src\services\GRUPO.Catalogo.API\GRUPO.Catalogo.API.csproj", "{CD07B75F-EC4C-48E0-88CE-2A339C41D91F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GRUPO.Catalogo.API", "src\services\GRUPO.Catalogo.API\GRUPO.Catalogo.API.csproj", "{CD07B75F-EC4C-48E0-88CE-2A339C41D91F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRUPO.Cliente.API", "src\services\GRUPO.Cliente.API\GRUPO.Cliente.API.csproj", "{F07A5525-7590-4AF7-8002-C01BFB0E1BF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GRUPO.Cliente.API", "src\services\GRUPO.Cliente.API\GRUPO.Cliente.API.csproj", "{F07A5525-7590-4AF7-8002-C01BFB0E1BF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRUPO.Pagamento.API", "src\services\GRUPO.Pagamento.API\GRUPO.Pagamento.API.csproj", "{573E884B-8EE5-4BD8-ADB9-CCD93C2BA894}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GRUPO.Pagamento.API", "src\services\GRUPO.Pagamento.API\GRUPO.Pagamento.API.csproj", "{573E884B-8EE5-4BD8-ADB9-CCD93C2BA894}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRUPO.Pedido.API", "src\services\GRUPO.Pedido.API\GRUPO.Pedido.API.csproj", "{FF5A59C6-C95C-4EE2-AAD7-5895A57AF112}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GRUPO.Pedido.API", "src\services\GRUPO.Pedido.API\GRUPO.Pedido.API.csproj", "{FF5A59C6-C95C-4EE2-AAD7-5895A57AF112}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
