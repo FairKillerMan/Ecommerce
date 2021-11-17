@@ -34,17 +34,16 @@ namespace GRUPO.Identidade.API
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
-            var appSettingsSection = Configuration.GetSection(key: "AppSettings");
+            var appSettingsSection = Configuration.GetSection("AppSettings");
             services.Configure<AppSettings>(appSettingsSection);
-            
+
             var appSettings = appSettingsSection.Get<AppSettings>();
             var key = Encoding.ASCII.GetBytes(appSettings.Secret);
-                                                        
-            services.AddAuthentication(configureOptions: options =>
+
+            services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-
             }).AddJwtBearer(bearerOptions =>
             {
                 bearerOptions.RequireHttpsMetadata = true;
@@ -56,9 +55,9 @@ namespace GRUPO.Identidade.API
                     ValidateIssuer = true,
                     ValidateAudience = true,
                     ValidAudience = appSettings.ValidoEm,
-                    ValidIssuer = appSettings.Emissor,
+                    ValidIssuer = appSettings.Emissor
                 };
-            }); ;
+            });
 
             services.AddControllers ();
             services.AddSwaggerGen(c =>
