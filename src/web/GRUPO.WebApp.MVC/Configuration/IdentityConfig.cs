@@ -6,13 +6,13 @@ namespace GRUPO.WebApp.MVC.Configuration
 {
     public static class IdentityConfig
     {
-        public static void AddIdentityConfiguration(this IServiceCollection services)
+        public static void AddIdentityConfiguration(this IServiceCollection services) //Método de extensão: IServiceCollection ()
         {
-            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme) //Add uma autenticação do tipo Cookie com esquema de autenticação
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme) //Add autenticação do tipo cookie usando o schema
                 .AddCookie(options =>
                 {
-                    options.LoginPath = "/login";
-                    options.AccessDeniedPath = "/erro/403";
+                    options.LoginPath = "/login";           //Caminho para fazer login
+                    options.AccessDeniedPath = "/erro/403"; //Sem acesso
                 });
         }
 
